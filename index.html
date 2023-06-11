@@ -1,0 +1,116 @@
+<html>
+<head>
+  <title>Real Time Image Identification App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+  <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<title>Google Lens vs Mobinet</title>
+<ol>
+  <div class="Test image and result col-xs-12">
+    <li class="col-sm-4 col-xs-12">
+      <b>Test Image</b>
+      <img src="Coffee Mug.png" class="img-responsive">
+    </li>
+    <h5 class="col-sm-4 col-xs-12">
+      Output on <b>Google Lens</b>
+      <span>It showed me similar images of a coffee mug and it detected the coffee mug, so it passed the first test.</span>
+    </h5>
+
+
+    <h5 class="col-sm-4 col-xs-12">
+      Output on<b>Mobilnet Model</b>
+      <span>It got coffee mug, but after a lot of tries and only got 60% accuracy so in this case google lens is more accurate.</span>
+    </h5>
+
+    <div class="mini-result" class="col-xs-12">
+      <h4>Result - </h4>
+      <hr>
+      <h4></h4>
+    </div>
+
+
+    <div class="Test image and result col-xs-12">
+      <li class="col-sm-4 col-xs-12">
+        <b>Test Image</b>
+        <img src="Controller.png" class="img-responsive">
+      </li>
+      <h5 class="col-sm-4 col-xs-12">
+        Output on <b>Google Lens</b>
+        <span>Yes, it passed this test because it identified it was an Xbox controller and it was black. It additonally also identified the model.</span>
+      </h5>
+  
+  
+      <h5 class="col-sm-4 col-xs-12">
+        Output on<b>Mobilnet Model</b>
+        <span>It detected it as joystick/remote controll, but google lens identified it as an Xbox controller spesifically so google lens is more accurate again.</span>
+      </h5>
+  
+      <div class="mini-result" class="col-xs-12">
+        <h4>Result - </h4>
+        <hr>
+        <h4></h4>
+      </div>
+
+
+      <div class="Test image and result col-xs-12">
+        <li class="col-sm-4 col-xs-12">
+          <b>Test Image</b>
+          <img src="Helmet.png" class="img-responsive">
+        </li>
+        <h5 class="col-sm-4 col-xs-12">
+          Output on <b>Google Lens</b>
+          <span>Yes, it passed the test as it correctly ientified that the helmet was a Marina bay Singapore helmet and that you can buy it online</span>
+        </h5>
+    
+    
+        <h5 class="col-sm-4 col-xs-12">
+          Output on<b>Mobilnet Model</b>
+          <span>It got identified as ski mask and not helmet so it failed because Google lens identified it as helmet and spesiffically the Marina bay sands one.</span>
+        </h5>
+    
+        <div class="mini-result" class="col-xs-12">
+          <h4>Result - </h4>
+          <hr>
+          <h4></h4>
+        </div>
+
+
+        <div class="Test image and result col-xs-12">
+          <li class="col-sm-4 col-xs-12">
+            <b>Test Image</b>
+            <img src="Notebook.png" class="img-responsive">
+          </li>
+          <h5 class="col-sm-4 col-xs-12">
+            Output on <b>Google Lens</b>
+            <span>This is 50/50 because it sometimes identified the book as wallpaper and lamenting paper, but sometimes as an A4 composition writing book</span>
+          </h5>
+      
+      
+          <h5 class="col-sm-4 col-xs-12">
+            Output on<b>Mobilnet Model</b>
+            <span>It got identified as a hamper so it was a complete fail.</span>
+          </h5>
+      
+          <div class="mini-result" class="col-xs-12">
+            <h4>Result - </h4>
+            <hr>
+            <h4></h4>
+          </div>
+      
+    
+  
+
+  </div>
+  <br>
+</ol>
+
+
+</html>
